@@ -1,0 +1,37 @@
+{
+  "paths": [
+    "/",
+    "/api/v1/recommend",
+    "/health"
+  ],
+  "health": {
+    "status": "ok",
+    "database": "ok",
+    "version": "0.2.0",
+    "env": "development"
+  },
+  "recommend_status": 503,
+  "recommend_body": {
+    "detail": {
+      "code": "ai_not_configured",
+      "message": "未配置 DEEPSEEK_API_KEY，AI 推荐暂不可用"
+    }
+  },
+  "invalid_status": 422,
+  "invalid_body": {
+    "detail": [
+      {
+        "type": "value_error",
+        "loc": [
+          "body",
+          "requirement"
+        ],
+        "msg": "Value error, 养生需求不能为空白字符",
+        "input": "   ",
+        "ctx": {
+          "error": {}
+        }
+      }
+    ]
+  }
+}

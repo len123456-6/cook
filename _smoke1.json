@@ -1,0 +1,13 @@
+{
+  "paths": [
+    "/",
+    "/health",
+    "/api/v1/recommend"
+  ],
+  "health": {
+    "status": "ok",
+    "database": "ok",
+    "version": "0.2.0",
+    "env": "development"
+  }
+}
